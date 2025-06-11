@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Oytun Portfolyo</title>
+</head>
+<body>
+
+<section id="home">
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Oytun <span>Tavlı</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Ana Sayfa</a>
+                <a href="#skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Yetenekler</a>
+                <a href="#about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Hakkında</a>
+                <a href="#services" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Servisler</a>
+                <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">İletişim</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#skills">Yetenekler</a>
+                <a href="#about">Hakkında</a>
+                <a href="#services">Servisler</a>
+                <a href="#contact">İletişim</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        <div class="content">
+            <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Merhaba Ben <span>Oytun</span></h1>
+            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">Ben bir <span class="typewriter-text"></span><label for="">|</label></div>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">
+                Web geliştirme ve tasarım alanında tutkulu biriyim. Modern ve kullanıcı dostu projeler üretmek için sürekli öğreniyorum ve gelişiyorum.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/inanulassoftware"><i id="sosyalikon" class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i></a>
+            </div>
+            <button id="butoncv" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700"><a href="#contact" style="text-decoration: none; color: white;">İletişime Geç</a></button>
+        </div>
+        <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="resimler/main.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h1 id="skillsh11">YETENEKLER</h1>
+    <div class="skillss" id="html" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="skillssh1" id="htmlh1">HTML</h1>
+        <p class="skillssp" id="htmlp">
+            Anlamlı ve erişilebilir web sayfaları oluşturmak için HTML5 standartlarını etkin bir şekilde kullanırım.
+        </p>
+        <img class="htmlresim" src="resimler/Adsız tasarım (21).png" alt="">
+    </div>
+
+    <div class="skillss" id="css" data-aos="fade-right" data-aos-duration="1500" >
+        <h1 class="skillssh1" id="cssh1">CSS</h1>
+        <p class="skillssp" id="cssp">
+            Responsive tasarım teknikleri ve modern CSS özellikleri ile estetik ve işlevsel arayüzler tasarlarım.
+        </p>
+        <img id="cssimg" class="htmlresim" src="resimler/Adsız tasarım (27).png" alt="">
+    </div>
+
+    <div  class="skillss" id="javascript" data-aos="fade-right" data-aos-duration="1500">
+        <h1 id="jsh1" class="skillssh1" id="javascripth1">JAVASCRIPT</h1>
+        <p class="skillssp" id="javascriptp">
+            Dinamik ve etkileşimli web uygulamaları geliştirmek için JavaScript ve ES6+ özelliklerini kullanırım.
+        </p>
+        <img class="htmlresim" src="resimler/Adsız tasarım (23).png" alt="">
+    </div>
+
+    <div class="skillss" id="pixelart" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="skillssh1" id="pixelarth1">PHP</h1>
+        <p class="skillssp" id="pixelartp">
+            Sunucu tarafı programlama yaparak sağlam ve ölçeklenebilir web uygulamaları geliştiririm.
+        </p>
+        <img class="htmlresim" src="resimler/Adsız tasarım (24).png" alt="">
+    </div>
+
+    <div class="skillss" id="logodesign" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="skillssh1" id="logodesingh1">Tasarım</h1>
+        <p class="skillssp" id="logodesignp">
+            Markalara özgün kimlikler kazandırmak için yaratıcı grafik ve logo tasarımları yaparım.
+        </p>
+        <img class="htmlresim" src="resimler/Adsız tasarım (25).png" alt="">
+    </div>
+</section>
+
+<section id="about">
+    <h1 id="abouth1">Hakkımda</h1>
+    <img id="aboutimg" src="resimler/main.png" alt="">
+    <p>
+        Yazılım geliştirmeye ve tasarıma tutkulu biriyim. Yeni teknolojileri öğrenmeye açığım ve her projede en iyisini ortaya koymaya çalışırım.
+    </p>
+    <button id="aboutbt">İletişime Geç</button>
+</section>
+
+<section id="services">
+  <h1 id="servicesh1h1">Servisler</h1>
+
+  <div class="services-container">
+    <div class="service-box">
+      <i class="fa-solid fa-laptop-code service-icon"></i>
+      <h1 class="service-title">Web Geliştirme</h1>
+      <button class="service-button"><a class="aajax" href="">Şimdi İletişime Geç</a></button>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-pen-nib service-icon"></i>
+      <h1 class="service-title">Tasarım</h1>
+      <button class="service-button"><a class="aajax" href="">Şimdi İletişime Geç</a></button>
+    </div>
+  </div>
+</section>
+
+<section id="contact"> 
+  <div id="contact-container">
+    <h1 id="contacth1">İletişim</h1>
+    <form id="contactform">
+      <input type="text" name="name" placeholder="Adınız" required />
+      <input type="email" name="email" placeholder="E-posta Adresiniz" required />
+      <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Mesaj Gönder</button>
+    </form>
+    <p id="success-message" style="display: none; color: lightgreen; text-align: center; margin-top: 20px;">
+      Mesajınız başarıyla gönderildi!
+    </p>
+  </div>
+</section>
+
+
+  <!-- AOS (isteğe bağlı) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+  </script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Sayfa tamamen yüklendikten sonra çalıştır
+    window.addEventListener("load", function () {
+    emailjs.init("iYmUL6oUmkPhJCZwI");
+    });
+
+    document.getElementById("contactform").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_4bpl31v", "template_u3zeezn", this) // <-- BURAYI KENDİ SERVICE VE TEMPLATE ID'LERİNE GÖRE GÜNCELLE
+        .then(() => {
+          document.getElementById("success-message").style.display = "block";
+          document.getElementById("contactform").reset();
+          setTimeout(() => {
+            document.getElementById("success-message").style.display = "none";
+          }, 5000);
+        }, (error) => {
+          alert("Mesaj gönderilirken bir hata oluştu: " + JSON.stringify(error));
+        });
+    });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const texts = ["Geliştiriciyim", "Tasarımcıyım", "Yazılımcıyım"];
+      const textElement = document.querySelector('.typewriter-text');
+      if (!textElement) {
+          console.error("'.typewriter-text' bulunamadı.");
+          return;
+      }
+
+      let textIndex = 0;
+      let charIndex = 0;
+      const speed = 100;
+      const eraseSpeed = 50;
+      const newTextDelay = 1000;
+
+      function typeWriter() {
+          if (charIndex < texts[textIndex].length) {
+              textElement.textContent += texts[textIndex].charAt(charIndex);
+              charIndex++;
+              setTimeout(typeWriter, speed);
+          } else {
+              setTimeout(eraseText, newTextDelay);
+          }
+      }
+
+      function eraseText() {
+          if (textElement.textContent.length > 0) {
+              textElement.textContent = textElement.textContent.slice(0, -1);
+              setTimeout(eraseText, eraseSpeed);
+          } else {
+              textIndex = (textIndex + 1) % texts.length;
+              charIndex = 0;
+              setTimeout(typeWriter, 500);
+          }
+      }
+
+      typeWriter();
+  });
+  </script>
+
+
+
+</body>
+</html>
+

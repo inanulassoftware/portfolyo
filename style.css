@@ -1,0 +1,1122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #1130e0;
+    text-shadow: 0 0 10px #1130e0;
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: #1130e0;
+    border-bottom: 2px solid #1130e0;
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown .links a{
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: #1130e0;
+}
+
+section {
+    width: 100%;
+    height: auto; /* Otomatik içerik yüksekliği */
+    min-height: 100vh; /* Ekran yüksekliğinden en az %100 olacak */
+}
+
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .content{
+    color: white;
+    width: 40%;
+    min-height: 100px;
+    box-shadow: 0 0 120px 50px black;
+}
+
+.content h1{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px #1130e0;
+    color: #1130e0;
+}
+
+.content .typewriter{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.typewriter span{
+    color: #1130e0;
+    text-shadow: 0 0  10px #1130e0;
+}
+
+.content p{
+    font-size: clamp(0.8rem, 0.5rem + 3vw, 1.1rem);
+    margin: 20px 0;
+}
+
+.social-links i{
+    color: #1130e0;
+    margin: 0 15px;
+    font-size: 1.8rem;
+    transition: 0.3s linear;
+}
+
+.social-links i:hover{
+    filter: drop-shadow(0 0 10px #1130e0);
+    scale: 1.3;
+}
+
+.content button{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: #1130e0;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.content button:hover{
+    scale: 1.1;
+    border: 2px solid #1130e0;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px 5px #1130e0;
+}
+
+.main-container .image{
+    width: 500px;
+    height: 80vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #1130e0;
+    z-index: -1;
+}
+
+.main-container .image img{
+    width: 100%;
+}
+
+@media (max-width:1100px) {
+    .htmlresim{
+        width: 200px;
+        height: 200px;
+        margin-left: 64%;
+        margin-top: -50px !important;
+    }
+}
+
+@media (max-width:884px) {
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,.cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container .image{
+        width: 60%;
+        height: 70%;
+    }
+
+    .content button{
+        margin: 15px 25%;
+    }
+}
+
+
+@media (max-width:440px) {
+    .main-container .image{
+        width: 70%;
+        height: 60%;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+    
+}
+
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+
+#butoncv{
+    transition: all 0.5s ease;
+
+}
+
+#skillsh11{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: #1130e0 0px 0px 10px;
+}
+
+
+
+.skillss {
+    background-color: #1130e0;
+    height: 400px;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 15%;
+    border-radius: 30px;
+    box-shadow: 0 0 50px #1130e0;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* veya center */
+    padding: 30px;
+
+
+}
+
+.skillssh1{
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+    margin-top: 60px;
+    text-shadow: #1130e0 0px 0px 10px;
+    margin-left: 200px;
+    display: inline-block;
+}
+
+.skillssp{
+    color: white;
+    margin-right: 400px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.htmlresim{
+    width: 270px;
+    height: 270px;
+    margin-left: 64%;
+    margin-top: -13%;
+    display: inline;
+    border-radius: 20px;
+}
+
+.buttonskills {
+    color: white;
+    background-color: rgb(0, 76, 139);
+    box-shadow: #1a2770 0px 0px 10px;
+    width: 200px;
+    height: 50px;
+    border: none;         /* Butonun varsayılan kenarlığını siler */
+    outline: none;        /* Tıklayınca çıkan siyah odak çizgisini siler */
+    border-radius: 20px;
+    margin-left: 19%;
+    margin-top: -130px; /* veya sabit px değeri kullan */
+    display: "inline";
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+    
+}
+
+.buttonskills:hover {
+    background-color: #1130e0;
+    color: white;
+    box-shadow: #1a2770 0px 0px 10px;
+    transform: scale(1.1); /* Hover efekti için boyutlandırma */
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+#jsh1{
+    margin-left: 100px;
+
+}
+
+#logodesingh1{
+    margin-left: 100px;
+}
+
+#pixelarth1{
+    margin-left: 100px;
+}
+
+#cssh1{
+    margin-left: 100px;
+}
+
+#htmlh1{
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 1136px) {
+    .htmlresim {
+        margin-top: -130px !important;
+        margin-left: 60% !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .htmlresim {
+        margin-top: -180px !important;
+        margin-left: 60% !important;
+    }
+    .buttonskills{
+        margin-top: -80px!important;
+    }
+}
+
+@media screen and (max-width: 957px) {
+    .htmlresim {
+        margin-top: -230px !important;
+        margin-left: 59% !important;
+    }
+    .buttonskills{
+        margin-top: -0px!important;
+        height: 50px !important;
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    /* Resim düzeni */
+    .htmlresim {
+        width: 250px !important;
+        height: 250px !important;
+        margin-top: 20px !important; /* Resmi üstten biraz boşluk bırakıyoruz */
+        margin-left: auto !important; /* Ortalamak için */
+        margin-right: auto !important; /* Ortalamak için */
+        display: block !important; /* Resmi blok olarak yapıyoruz */
+    }
+
+    /* Başlık düzeni */
+    .skillssh1 {
+        font-size: 2rem !important;
+        text-align: center !important; /* Başlığı ortalıyoruz */
+        margin-top: 20px !important; /* Başlık için üstten biraz boşluk */
+        margin-left: -10px !important; /* Sol boşluğu sıfırlıyoruz */
+    }
+
+    /* Paragraf düzeni */
+    .skillssp {
+        text-align: center !important; /* Paragrafı ortalıyoruz */
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 10px !important; /* Paragraf için biraz üstten boşluk */
+        font-size: 1rem !important; /* Paragraf boyutunu daha küçük yapıyoruz */
+    }
+
+    /* Skill box düzeni */
+    .skillss {
+        display: flex;
+        flex-direction: column; /* Dikey hizalama */
+        align-items: center; /* Öğeleri ortalamak için */
+        justify-content: center; /* Öğeleri dikeyde ortalamak için */
+        padding: 20px !important;
+        height: auto !important; /* Yüksekliği dinamik yapıyoruz */
+        background-color: #1130e0;
+        box-shadow: 0 0 50px #1130e0;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    /* Button düzeni */
+    .buttonskills {
+        margin-top: 20px !important; /* Butonu biraz aşağıya kaydırıyoruz */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 200px;
+        height: 50px;
+        display: block !important; /* Butonu ortalamak için */
+        border-radius: 20px;
+        text-align: center;
+    }
+}
+
+#abouth1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: #1130e0 0px 0px 10px;
+    transform: translateX(50px);
+    
+}
+
+#aboutimg{
+        display: inline;
+        border-radius: 20px;
+        margin-left: 3.5%;
+        box-shadow: #1130e0 0px 0px 30px;
+        transition: 0.3s linear;
+}
+
+#aboutimg:hover{
+    scale: 1.1;
+    box-shadow: #1130e0 0px 0px 50px;
+    transition: 0.3s linear;
+}
+
+#aboutp{
+    color: white;
+    margin-left: 600px;
+    text-align: center;
+    margin-top: -450px;
+    font-size: large;
+    margin-right: 50px;
+}
+
+#aboutbt{
+    color: white;
+    background-color: #1130e0;
+    box-shadow: #1a2770 0px 0px 10px;
+    width: 30%;
+    height: 50px;
+    border: none;         /* Butonun varsayılan kenarlığını siler */
+    outline: none;        /* Tıklayınca çıkan siyah odak çizgisini siler */
+    border-radius: 20px;
+    margin-left: 55%;
+    margin-top: -80px; /* veya sabit px değeri kullan */
+    display: "inline";
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+    margin-top: 50px;
+    
+}
+
+#aboutbt:hover {
+    background-color: #122dc5;
+    color: white;
+    box-shadow: #1a2770 0px 0px 10px;
+    transform: scale(1.1); /* Hover efekti için boyutlandırma */
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+@media screen and (max-width: 1271px) {
+    #aboutbt{
+        margin-right: -890px!important;
+    }
+    
+}
+
+@media screen and (max-width: 1130px) {
+    #aboutimg{
+        width: 40% !important;
+        height: 40% !important;
+        margin-top: 20px !important;
+        margin-left: 30% !important;
+    }
+
+    #aboutp{
+        margin-top: 10px !important;
+        font-size: 1.2rem !important;
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+
+    #aboutbt{
+        margin-top: 20px !important;
+        
+        margin-left: 36% !important;
+    }
+    
+}
+
+
+#servicesh1h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin: -40px auto 20px auto; /* üstte boşluk (-40px), altta 20px boşluk */
+    text-shadow: #1130e0 0px 0px 10px;
+    width: max-content; /* içerik kadar genişlik verir, ortalama düzgün çalışır */
+    text-align: center;
+}
+
+#servicediv, #servicediv2, #servicediv3 {
+    background-color: white;
+    width: calc(85% / 3);
+    height: 500px;
+    margin: calc(15% / 6);
+}
+
+#servicediv {
+    background-color: #1130e0;
+    color: white;
+    box-shadow: 0 0 50px #1130e0;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicediv2 {
+    background-color: #1130e0;
+    color: white;
+    box-shadow: 0 0 50px #1130e0;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    display: flex;
+
+}
+
+#servicediv3 {
+    background-color: #1130e0;
+    color: white;
+    box-shadow: 0 0 50px #1130e0;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    margin-left: 600px;
+    display: flex;
+}
+
+#servicediv{
+    margin-left: -46.4%;
+}
+#services {
+    text-align: center;
+    color: white;
+}
+
+.service-box {
+    margin-bottom: 100px;
+}
+
+.service-icon {
+    font-size: 14rem;
+    text-shadow: #1130e0 0px 0px 10px;
+    margin-top: 40px;
+}
+
+.service-title {
+    text-shadow: #1130e0 0px 0px 10px;
+    margin-top: 20px;
+}
+
+.service-button {
+    color: white;
+    background-color: #1130e0;
+    box-shadow: #1a2770 0px 0px 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.aajax {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+
+#contact-container{
+    box-shadow:#1130e0 0px 0px 50px;
+    width: 90%;
+    height: 700px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+#contacth1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 50px;
+    text-shadow: #1130e0 0px 0px 50px;
+}
+
+#contact {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-container {
+  background: #1c1c3c;
+  box-shadow: 0 0 30px #1130e0;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* Heading */
+#contacth1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 20px #1130e0;
+}
+
+/* Form Styles */
+#contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contactform input,
+#contactform textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #2a2a4f;
+  color: white;
+  outline: none;
+}
+
+#contactform input::placeholder,
+#contactform textarea::placeholder {
+  color: #b0b0e0;
+}
+
+#contactform button {
+  padding: 15px;
+  background-color: #1130e0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contactform button:hover {
+  background-color: #0d25b0;
+}
+
+@media (max-width: 480px) {
+  #contacth1 {
+    font-size: 2rem;
+  }
+
+  #contact-container {
+    padding: 20px;
+  }
+}
+
+#success-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #00ff99;
+  font-size: 1.1rem;
+  display: none;
+}
+
+#contact-container {
+  box-shadow: #1130e0 0px 0px 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+#contacth1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: #1130e0 0px 0px 20px;
+}
+
+#contactform input,
+#contactform textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #0f3460;
+  color: white;
+}
+
+#contactform button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1130e0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contactform button:hover {
+  background-color: #0a1ed1;
+}
+
+@media (max-width: 550px) {
+  #abouth1 {
+    text-align: center;
+  }
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Diğer stiller */
+}
+
+h1, h2, h3, .logo, .nav-container .links a {
+    font-family: 'Poppins', sans-serif;
+    /* Diğer stiller */
+}
+/* style.css */
+:root {
+    --primary-color: #1130e0;
+    --accent-color: #00b8d4; /* Yeni vurgu rengi */
+    --background-dark: #1a1a1a;
+    --text-light: #e0e0e0;
+    --shadow-light: rgba(0, 0, 0, 0.4);
+    --transition-speed: 0.3s ease;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Yeni font */
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */ /* Kaldırdık, içeriğe göre uzayacak */
+    background-color: var(--background-dark);
+    color: var(--text-light); /* Varsayılan metin rengi */
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    scroll-behavior: smooth; /* Tüm sayfada yumuşak kaydırma */
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Menünün diğer her şeyin üzerinde olduğundan emin ol */
+    background-color: rgba(26, 26, 26, 0.9); /* Hafif şeffaf arka plan */
+    backdrop-filter: blur(5px); /* Hafif blur efekti */
+    box-shadow: 0 2px 10px var(--shadow-light); /* Hafif gölge */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    color: var(--text-light);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Logo fontu */
+}
+
+.logo span{
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.hamburg, .cancel{
+    cursor: pointer;
+    color: var(--primary-color); /* Hamburger ikonu rengi */
+    font-size: clamp(2rem, 0.5rem + 5vw, 2.5rem);
+    display: none; /* Varsayılan olarak gizli, mobil için açılacak */
+    transition: var(--transition-speed);
+}
+.hamburg:hover, .cancel:hover {
+    color: var(--accent-color);
+}
+
+.nav-container .links a{
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin: 0 18px;
+    text-decoration: none;
+    transition: var(--transition-speed);
+    position: relative; /* Hover efekti için */
+}
+
+.nav-container .links a:hover{
+    color: var(--primary-color);
+}
+
+.nav-container .links a::after { /* Alt çizgi efekti */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-out;
+}
+
+.nav-container .links a:hover::after {
+    width: 100%;
+}
+
+.dropdown{
+    z-index: 999; /* Navigasyonun altında kalmalı */
+    position: fixed; /* Fixed olarak ayarlayalım */
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); /* Tamamen yukarıda gizle */
+    width: 100%;
+    height: 100vh; /* Tüm ekranı kaplasın */
+    background-color: rgba(0, 0, 0, 0.95); /* Daha koyu arka plan */
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px black;
+    transition: transform var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown.active { /* JavaScript ile eklenen sınıf */
+    transform: translateY(0);
+}
+
+.dropdown .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Bağlantılar arası boşluk */
+}
+
+.dropdown .links a{
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    transition: var(--transition-speed);
+}
+
+.dropdown .links a:hover{
+    background-color: var(--primary-color);
+    color: white; /* Hover'da beyaz metin */
+}
+
+.dropdown .cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+}
+#skills{
+    padding: 80px 20px; /* Üstten ve alttan boşluk */
+    text-align: center; /* Genel metin hizalaması */
+}
+
+#skillsh11{
+    color: var(--text-light);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 60px; /* Başlıktan sonra daha fazla boşluk */
+    text-shadow: var(--primary-color) 0px 0px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-grid { /* Yeni bir kapsayıcı ekleyelim */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 40px; /* Kartlar arası boşluk */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Ortala */
+}
+
+.skillss {
+    background-color: var(--primary-color); /* Arka plan rengi */
+    border-radius: 20px; /* Daha yumuşak köşeler */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Daha belirgin gölge */
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ortala */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Taşmaları engelle */
+}
+
+.skillss::before { /* Kartların arkasına parıltı efekti */
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.skillss:hover::before {
+    opacity: 1;
+    animation: shine 1s ease-out;
+}
+
+@keyframes shine {
+    from { opacity: 0; transform: rotate(45deg) scale(0.5); }
+    to { opacity: 1; transform: rotate(45deg) scale(1); }
+}
+
+
+.skillss:hover {
+    transform: translateY(-10px) scale(1.02); /* Hafif yukarı kayma ve büyüme */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), 0 0 30px var(--accent-color); /* Daha güçlü gölge ve vurgu */
+}
+
+.skillssh1{
+    color: var(--text-light);
+    font-size: 2.2rem;
+    margin-top: 20px; /* Üstten boşluk */
+    margin-bottom: 15px;
+    text-shadow: var(--background-dark) 2px 2px 5px; /* Daha yumuşak metin gölgesi */
+    font-family: 'Poppins', sans-serif;
+    position: relative; /* Z-index için */
+    z-index: 1;
+}
+
+.skillssp{
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.htmlresim{ /* Tüm yetenek resimleri için genel sınıf */
+    width: 150px; /* Daha küçük, tutarlı boyut */
+    height: 150px;
+    object-fit: contain; /* Resmin boyutunu korur */
+    border-radius: 15px; /* Hafif köşeler */
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* Tek tek başlık margin'lerini kaldırıyoruz, genel '.skillssh1' yeterli */
+/* #jsh1, #logodesingh1, #pixelarth1, #cssh1, #htmlh1 stilleri kaldırıldı */
+
+.buttonskills {
+    color: var(--text-light);
+    background-color: var(--accent-color); /* Vurgu rengini kullan */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 180px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 25px; /* Daha oval buton */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: var(--transition-speed);
+    margin-top: auto; /* Alt kısma hizala */
+    position: relative;
+    z-index: 1;
+}
+
+.buttonskills:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 25px var(--primary-color);
+    transform: scale(1.05); /* Hover efekti için boyutlandırma */
+}
+
+#about{
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Mobil için dikey */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#abouth1{
+    color: var(--text-light);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 40px;
+    text-shadow: var(--primary-color) 0px 0px 15px;
+    font-family: 'Poppins', sans-serif;
+    transform: none; /* Mevcut transform'ı kaldır */
+}
+
+#aboutimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px var(--primary-color);
+    transition: transform 0.5s ease;
+}
+#aboutimg:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+#aboutp{
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+#aboutbt{
+    margin-right: 500px;
+    width: 220px;
+    height: 55px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition-speed);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#aboutbt:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0 40px 5px var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    #aboutimg {
+        margin-right: 130px !important;
+    }
+}
