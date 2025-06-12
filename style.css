@@ -1120,3 +1120,10 @@ nav{
         margin-right: 130px !important;
     }
 }
+
+@media (max-width: 450px) {
+  .htmlresim {
+    display: block;
+    margin: 0 auto;
+  }
+}
